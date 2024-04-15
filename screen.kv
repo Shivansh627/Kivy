@@ -1,0 +1,19 @@
+Manager:
+    First:
+    Second:
+
+<First>:
+    name:"First screen"
+    Label:
+        text:"First screen"
+    Button:
+        text:"next screen"
+        size_hint:(0.4,0.2)
+        on_press:
+            app.root.current="Second screen"
+            root.manager.transition.direction="right"
+
+<Second>:
+    name:"Second screen"
+    Label:
+        text:"Final screen"
